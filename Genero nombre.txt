@@ -1,0 +1,38 @@
+
+package ejE;
+
+import java.util.Scanner;
+
+
+public class eJ {
+    
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.println("Introduce tu nombre: ");//PEDIMOS EL NOMBRE
+        String nombre = teclado.nextLine();//INTRODUCIMOS EL NOMBRE
+        
+        System.out.println("Introduce tu Sexo (H=hombre y M=mujer)");
+        char sexo = teclado.next().charAt(0);
+        
+        System.out.println("Introduce tu edad: ");
+        int edad = teclado.nextInt();
+        
+        if(sexo=='H'){//PONEMOS NUESTRS CONDICIÓN DE HOMBRE
+            System.out.println("Eres un hombre");
+        }else if (sexo=='M'){//PONEMOS NUESTRA CONDICIÓN DE MUJER
+            System.out.println("Eres una mujer");
+        }
+        
+        
+        if (edad>=18){//PONEMOS NUESTRA CONDICIÓN DE MAYOR DE EDAD
+            System.out.println("Eres mayor de edad");
+        }else {//NUESTRA CONDICIÓN DE MENOR DE EDAD
+            System.out.println("Eres menor de edad");
+        }
+        
+        
+    }
+
+}
